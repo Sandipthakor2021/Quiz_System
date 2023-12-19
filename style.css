@@ -1,0 +1,80 @@
+body {
+    background-color: #e6f7ff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.quiz-container {
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation: bounceIn 1s ease; /* Apply bounce-in animation */
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    animation: pulse 1.5s infinite alternate; /* Apply pulse animation to h1 */
+}
+
+@keyframes pulse {
+    to {
+        transform: scale(1.1);
+    }
+}
+
+button {
+    height: 50px;
+    font-size: 18px;
+    background-color: #b3e0ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #99c2ff;
+    transform: scale(1.05);
+}
+
+#timer {
+    font-weight: bold;
+    margin-left: 8px;
+    color: #ff6666;
+    animation: pulseTimer 1.5s infinite alternate; /* Apply pulse animation to timer */
+}
+
+@keyframes pulseTimer {
+    to {
+        transform: scale(1.1);
+    }
+}
